@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingwin Trainer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🍽 Pingwin Trainer</h1>
+
+    <p class="subtitle">
+        Тренажёр официанта
+    </p>
+
+    <div class="dashboard">
+
+        <div class="stat-box">
+            <span>⭐</span>
+            <h3 id="xp">0</h3>
+            <p>XP</p>
+        </div>
+
+        <div class="stat-box">
+            <span>🔥</span>
+            <h3 id="streak">0</h3>
+            <p>Серия</p>
+        </div>
+
+        <div class="stat-box">
+            <span>🏆</span>
+            <h3 id="level">1</h3>
+            <p>Уровень</p>
+        </div>
+
+    </div>
+
+    <div class="progress">
+        <div id="progressFill"></div>
+    </div>
+
+    <p id="progressText">
+        0% меню изучено
+    </p>
+
+    <div class="card">
+
+        <button id="studyBtn">📚 Изучение</button>
+
+        <button id="quizBtn">🎯 Викторина</button>
+
+        <button id="examBtn">🎓 Экзамен</button>
+
+        <button id="guestBtn">👤 Гость</button>
+    
+        <button id="statsBtn">📊 Статистика</button>
+
+    </div>
+
+    <div id="content"></div>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/achievements.js"></script>
+<script src="js/study.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/exam.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/guest.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
